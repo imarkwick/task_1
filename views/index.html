@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
 
+    <link rel="stylesheet" href="foundation.min.css" />
+
   </head>
   
   <body>
 
-    <h1>Hi</h1>
-
-    <form name="taskForm" id="form">
+    <section class="row">
+        <h1>Complete the form below</h1>
+        <p>* Please note: you must be over 14 years old to complete the form</p>
+    </section>
+    <form name="taskForm" id="form" class="row">
 
       <label for="contest1_name">What is your favourite music?</label>
       <select name="contest1_name" required>
@@ -24,12 +28,13 @@
         <option value="Electro/Dance">Electro/Dance</option>
       </select>
       <br>
+
       <label for="first_name">First name:</label>
       <input type="text" name="first_name" required />
-      <br>
+
       <label for="last_name">Last name:</label>
       <input type="text" name="last_name" />
-      <br>
+
       <label>Country/Region</label>
       <select name="country" required>
         <option value="">Select Your Country/Region</option>
@@ -276,14 +281,12 @@
         <option value="ZM">Zambia</option>
         <option value="ZW">Zimbabwe</option>
       </select>
-      <br>
 
       <label for="email">Email:</label>
       <input type="email" name="email" required />
 
-      <br>
       <label>Date of Birth</label>
-      <select name="birth_day" id="day" required>
+      <select name="birth_day" id="day" required class="small-4 columns">
         <option value="">DD</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -318,7 +321,7 @@
         <option value="31">31</option>
       </select>
 
-      <select name="birth_month" id="month" required>
+      <select name="birth_month" id="month" required class="small-4 columns">
         <option value="">MM</option>
         <option value="0">January</option>
         <option value="1">February</option>
@@ -334,7 +337,7 @@
         <option value="11">December</option>
       </select>
 
-      <select name="birth_year" id="yr" required>
+      <select name="birth_year" id="yr" required class="small-4 columns">
         <option value="">YYYY</option>
         <option value="2014">2014</option>
         <option value="2013">2013</option>
@@ -438,13 +441,13 @@
         <option value="1915">1915</option>
         <option value="1914">1914</option>
       </select>
-
       <br>
+
       <input type="checkbox" name="privacy_check" required/>
       <label for="privacy_check">I have read and understood the Terms and Conditions.</label>
-
       <br>
-      <input type="submit" name="ch_access" value="Submit" />
+
+      <input type="submit" name="ch_access" value="Submit" class="button tiny"/>
     </form>
     
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
