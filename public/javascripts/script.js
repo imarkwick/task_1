@@ -27,8 +27,9 @@ var checkAge = function(minimumAge) {
   var newDate = new Date(yr, month, day)
 
   if (newDate > minimumAge) {
-    alert('You cannot complete this form because you are younger than 14 years old');
+    alert('You cannot submit this form. You are younger than 14 years old');
+    return false;
   } else if (newDate < minimumAge) {
-    alert('We have validated that you are over 14 years old');
+    alert('Thank you for completig the form');
   };
 };
